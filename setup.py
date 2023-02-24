@@ -24,9 +24,9 @@ def read(*names, **kwargs):
 #         re.M | re.S,
 #         ).sub(
 #             '',
-#             read('README.rst'),
+#             read('README.md'),
 #             ),
-#     re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read(join('docs', 'CHANGELOG.rst')))
+#     re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read(join('docs', 'CHANGELOG.md')))
 #     )
 
 long_description = '{}\n{}'.format(
@@ -64,7 +64,7 @@ setup(
     project_urls={
         'webpage': 'https://github.com/speakclouder/monitoringy',
         'Documentation': 'https://monitoringy.readthedocs.io/en/latest/',
-        'Changelog': 'https://github.com/speakclouder/monitoringy/blob/main/CHANGELOG.rst',
+        'Changelog': 'https://github.com/speakclouder/monitoringy/blob/main/CHANGELOG.md',
         'Issue Tracker': 'https://github.com/speakclouder/monitoringy/issues',
         'Discussion Forum': 'https://github.com/speakclouder/monitoringy/discussions',
         },

@@ -124,7 +124,7 @@ And, continue doing your developments are previously discussed.
 Update CHANGELOG
 ~~~~~~~~~~~~~~~~
 
-Update the changelog file under :code:`CHANGELOG.rst` with an explanatory bullet
+Update the changelog file under :code:`CHANGELOG.md` with an explanatory bullet
 list of your contribution. Add that list right after the main title and before
 the last version subtitle:
 

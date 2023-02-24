@@ -35,7 +35,7 @@ bumpversion.cfg
 The ``.bumpversion.cfg`` configuration is heavily related with the GitHub
 Actions workflows for automated packaging and deployment and the
 ``CONTRIBUTING.rst`` instructions. Specially, the use of commit and tag
-messages, and the trick with CHANGELOG.rst.
+messages, and the trick with CHANGELOG.md.
 
 I have also used bumpversion in other projects to update the version on some
 badges.
