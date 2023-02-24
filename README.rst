@@ -1,4 +1,5 @@
-# Monitoringy
+Monitoringy
+===============================
 
 .. image:: https://github.com/speakclouder/monitoringy/workflows/ci/badge.svg?branch=main
     :target: https://github.com/speakclouder/monitoringy/actions?workflow=ci
