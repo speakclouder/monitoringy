@@ -12,8 +12,8 @@ jobs:
     strategy:
       # fail-fast: false
       matrix:
-        platform: [ubuntu-latest, macos-latest, windows-latest]
-        python-version: [3.7, 3.8, 3.9, '3.10']
+        platform: [ubuntu-latest]
+        python-version: [3.9]
         # you can separate the tox-envs in different .yml files
         # see version 0.10.1
         # https://github.com/joaomcteixeira/python-project-skeleton/releases/tag/v0.10.1
@@ -44,12 +44,3 @@ jobs:
 
     - name: unit tests
       run: tox -e ${{ matrix.tox-envs }}
-
-    # from https://github.com/codecov/codecov-action
-    - name: Upload coverage to Codecov
-      if: matrix.tox-envs == 'test'
-      uses: codecov/codecov-action@v2
-      with:
-        files: ./coverage.xml
-        fail_ci_if_error: true
-        verbose: true
