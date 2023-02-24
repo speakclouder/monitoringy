@@ -3,14 +3,14 @@ Certify the developer has input all requirements for PR.
 
 Situations tested:
 
-* additions are reported in CHANGELOG.rst
+* additions are reported in CHANGELOG.md
 """
 import os
 import sys
 from pathlib import Path
 
 folder = Path(__file__).resolve().parents[1]
-changelog = Path(folder, 'CHANGELOG.rst')
+changelog = Path(folder, 'CHANGELOG.md')
 
 
 class ChangelogError(Exception):
@@ -22,10 +22,8 @@ with open(changelog, 'r') as fin:
         if line.startswith('v'):
             msg = [
                 '',
-                'CHANGELOG.rst not updated:',
-                'Please add a summary of your additions as described in:',
-                'https://python-project-skeleton.readthedocs.io'
-                '/en/latest/contributing.html#update-changelog.',
+                'CHANGELOG.md not updated:',
+                'Please add a summary of your additions',
                 '',
                 ]
             sys.exit(os.linesep.join(msg))
