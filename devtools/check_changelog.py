@@ -23,9 +23,7 @@ with open(changelog, 'r') as fin:
             msg = [
                 '',
                 'CHANGELOG.rst not updated:',
-                'Please add a summary of your additions as described in:',
-                'https://python-project-skeleton.readthedocs.io'
-                '/en/latest/contributing.html#update-changelog.',
+                'Please add a summary of your additions',
                 '',
                 ]
             sys.exit(os.linesep.join(msg))
