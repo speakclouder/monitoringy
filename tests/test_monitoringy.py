@@ -1,6 +1,4 @@
-"""Performs general tests."""
-import amodule
-from sampleproject.libs import samplemodule as SM
+from monitoringy.libs import monitoringy
 
 
 def test_amodule():
